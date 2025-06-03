@@ -1,0 +1,414 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+    color: #22223b;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+
+/* Header */
+header {
+    background: linear-gradient(120deg, #4f8cff 60%, #a5b4fc 100%);
+    color: #fff;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: 0 4px 16px rgba(79, 140, 255, 0.1);
+    position: relative;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.judul h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    letter-spacing: 1px;
+}
+
+.judul h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.judul p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.scroll-down {
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+    animation: bounce 1.5s infinite;
+    color: #fff;
+    letter-spacing: 0.5rem;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(10px);}
+}
+
+/* About Me */
+#me {
+    margin: 2rem 0 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(79, 140, 255, 0.08);
+    padding: 1.5rem 1rem;
+    max-width: 350px;
+    text-align: center;
+}
+
+.about-me h2 {
+    color: #4f8cff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.about-me img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid #4f8cff;
+}
+
+.about-me p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+
+/* Skill Section */
+.skills-container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(79, 140, 255, 0.08);
+    padding: 1.5rem 1rem;
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto 1.5rem auto;
+}
+
+.skills-container h2 {
+    color: #4f8cff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* List ke bawah */
+    gap: 0.7rem;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    color: #fff;
+    font-weight: 600;
+    border-radius: 18px;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.10);
+    letter-spacing: 0.5px;
+    transition: transform 0.2s;
+    cursor: default;
+    user-select: none;
+    text-align: center;
+}
+
+/* Warna berbeda untuk tiap skill */
+.skill-networking {
+    background: linear-gradient(90deg, #06b6d4 60%, #60a5fa 100%);
+}
+.skill-programming {
+    background: linear-gradient(90deg, #4f8cff 60%, #a5b4fc 100%);
+}
+.skill-cyber {
+    background: linear-gradient(90deg, #818cf8 60%, #6366f1 100%);
+}
+
+.skills-list li:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Project Section */
+#project .container {
+    background: #f1f5ff;
+    border-radius: 18px;
+    padding: 1.2rem 1rem;
+    margin: 0 auto 1.5rem auto;
+    max-width: 350px;
+    box-shadow: 0 1px 6px rgba(79, 140, 255, 0.06);
+    text-align: center;
+    
+}
+
+#project h2 {
+    color: #4f8cff;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+#project ul {
+    list-style: none;
+}
+
+#project li {
+    background: #fff;
+    margin: 0.5rem 0;
+    padding: 0.7rem 0.8rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(79, 140, 255, 0.04);
+    font-size: 1rem;
+    color: #333;
+
+}
+
+#project li a {
+        color: #4f8cff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+
+
+
+/* Social Media Section */
+#social .container {
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.2rem 1rem 2rem 1rem;
+    margin: 0 auto 2rem auto;
+    max-width: 350px;
+    box-shadow: 0 1px 6px rgba(79, 140, 255, 0.06);
+    text-align: center;
+}
+
+#social h2 {
+    color: #4f8cff;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+#social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 0;
+}
+
+#social li {
+    width: 100%;
+}
+
+#social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    background: linear-gradient(90deg, #4f8cff 60%, #a5b4fc 100%);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.10);
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+#social a:hover {
+    background: linear-gradient(90deg, #2563eb 60%, #818cf8 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(79, 140, 255, 0.18);
+}
+
+#social a::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+#social a[href*="tiktok"]::before {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg');
+    filter: invert(1);
+}
+
+#social a[href*="instagram"]::before {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
+    filter: invert(1);
+}
+
+#social a[href*="g"]::before {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg');
+    filter: invert(1);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    header {
+        padding: 1.2rem 0.5rem 0.8rem 0.5rem;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    .about-me, #project .container, #social .container {
+        max-width: 98vw;
+        padding: 1rem 0.5rem;
+    }
+    .about-me img {
+        width: 70px;
+        height: 70px;
+    }
+    #project li {
+        font-size: 0.95rem;
+    }
+    #social a {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.8rem;
+    }
+
+
+/* Animasi masuk dinamis */
+.animate-hidden {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+.fadein-left {
+    animation: fadeinLeft 0.8s cubic-bezier(.4,0,.2,1) forwards;
+}
+.fadein-right {
+    animation: fadeinRight 0.8s cubic-bezier(.4,0,.2,1) forwards;
+}
+.fadein-up {
+    animation: fadeinUp 0.8s cubic-bezier(.4,0,.2,1) forwards;
+}
+.fadein-scale {
+    animation: fadeinScale 0.8s cubic-bezier(.4,0,.2,1) forwards;
+}
+
+@keyframes fadeinLeft {
+    from { opacity: 0; transform: translateX(-60px);}
+    to { opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeinRight {
+    from { opacity: 0; transform: translateX(60px);}
+    to { opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeinUp {
+    from { opacity: 0; transform: translateY(60px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeinScale {
+    from { opacity: 0; transform: scale(0.85);}
+    to { opacity: 1; transform: scale(1);}
+}
+}
+
+/* Responsive untuk PC/tablet */
+@media (min-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    header {
+        min-height: 60vh;
+        height: auto;
+        border-radius: 0 0 36px 36px;
+        padding: 3rem 2rem 2rem 2rem;
+    }
+
+    .judul h1 {
+        font-size: 2.7rem;
+    }
+    .judul h2 {
+        font-size: 1.5rem;
+    }
+    .judul p {
+        font-size: 1.1rem;
+    }
+
+    /* Layout section utama berdampingan */
+    .main-sections {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin: 2.5rem auto 0 auto;
+        max-width: 1200px;
+    }
+
+    #me, #skills, #project, #social {
+        margin: 0;
+        width: 100%;
+        max-width: 340px;
+        flex: 1 1 0;
+    }
+
+    .about-me,
+    .skills-container,
+    #project .container,
+    #social .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1100px) {
+    header {
+        padding: 3.5rem 4rem 2.5rem 4rem;
+    }
+    .main-sections {
+        gap: 3.5rem;
+        max-width: 1400px;
+    }
+}
